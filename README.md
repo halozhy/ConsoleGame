@@ -44,7 +44,7 @@ Visual Studio 2019
 按下空格键，开始我们的归途吧
 ```
 
-
+![image.png](https://i.loli.net/2021/02/17/nsmF7hWXld5GSEO.png)
 
 ### [DIALOG]
 
@@ -68,7 +68,7 @@ Visual Studio 2019
 看来今天也是提瓦特大陆晴朗的一天呢！
 ```
 
-
+![image.png](https://i.loli.net/2021/02/17/D2IwAEnvJgUsdCa.png)
 
 ### [SEL]
 
@@ -103,14 +103,29 @@ Visual Studio 2019
 先去逛海灯节
 先去接取委托任务
 [1]
-选择了1
+……
 [2]
-选择了2
+……
 ```
 
+![image.png](https://i.loli.net/2021/02/17/whsWN6AEunSOTMo.png)
 
+### [GOTO]
 
+#### 语法
 
+```
+[GOTO]
+179 //一个数字，代表要跳转到的行数
+```
+
+#### 效果
+
+直接跳转到指定的行号，其实也可以结合着`[SEL]`指令使用实现不同选项跳转到同一个结局
+
+#### 示例
+
+这个就不做示例了
 
 ### [MAZE]
 
@@ -130,7 +145,7 @@ Visual Studio 2019
 [MAZE]
 ```
 
-
+![image.png](https://i.loli.net/2021/02/17/VKQeEpZXIRbUSyx.png)
 
 ## 想要了解更多？
 
