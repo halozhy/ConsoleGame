@@ -391,7 +391,7 @@ int printBottomWithSelect(SMALL_RECT rect, const char* name, const char* str, in
  */
 void logo(SMALL_RECT rect) {
 	Sleep(1000);
-	char str[] = "A PBB Team Game";
+	char str[] = "A Console Game";
 	gotoxy(rect.Right / 2 - (short)strlen(str) / 2, rect.Bottom / 2);
 	printSleep(str, 30);
 	Sleep(1500);
@@ -523,15 +523,9 @@ void thanks(SMALL_RECT rect) {
 		gotoxy(i, rect.Bottom / 2);
 		putchar(32);
 	}
-	char s1[] = "感谢您游玩PBB团队开发的“文字解谜游戏”——《归》";
+	char s1[] = "感谢您游玩本文字游戏";
 	gotoxy(rect.Right / 2 - (short)strlen(s1) / 2, rect.Bottom / 2);
 	printSleep(s1, 10);
-	char s2[] = "剧本中部分名词基于游戏《原神》的世界观，不过与其主线剧情并无关联，游戏剧情也可不需结合原世界观理解";
-	gotoxy(rect.Right / 2 - (short)strlen(s2) / 2, rect.Bottom / 2 + 2);
-	printSleep(s2, 10);
-	char s3[] = "团队成员：张昊煜20195822，陈可欣20195378，孙璐通20195584";
-	gotoxy(rect.Right / 2 - (short)strlen(s3) / 2, rect.Bottom / 2 + 4);
-	printSleep(s3, 10);
 	while (true)
 	{
 		char c = _getch();
@@ -561,7 +555,7 @@ int main()
 	SetConsoleScreenBufferSize(handle_out, size);
 
 	//设置窗口标题
-	system("title 归");
+	system("title Console Game");
 	//设置背景和前景色
 	system("color 07");
 	//让控制台支持中文编码
